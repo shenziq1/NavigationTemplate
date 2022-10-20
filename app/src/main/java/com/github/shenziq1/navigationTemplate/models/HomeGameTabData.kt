@@ -1,6 +1,9 @@
 package com.github.shenziq1.navigationTemplate.models
 
-data class HomeGameTabData (
-    val id: Int,
-    val name: String,
-)
+object HomeGameTabData {
+    var data = mutableListOf<HomeGameTabCard>(
+        HomeGameTabCard(1, "apple"),
+        HomeGameTabCard(2, "banana"),
+        HomeGameTabCard(3, "curry")
+    )
+}
