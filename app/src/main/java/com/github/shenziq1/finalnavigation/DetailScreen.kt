@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 
 @Composable
@@ -20,11 +21,7 @@ fun DetailScreen(navController: NavHostController) {
                 imageVector = Icons.Filled.ArrowBack,
                 contentDescription = "null",
                 Modifier.clickable {
-                    navController.navigate("HOME") {
-                        popUpTo("HOME") {
-                            inclusive = true
-                        }
-                    }
+                    navController.popBackStack()
                 }
             )
         }

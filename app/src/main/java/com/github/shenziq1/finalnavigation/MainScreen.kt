@@ -1,5 +1,6 @@
 package com.github.shenziq1.finalnavigation
 
+import android.util.Log
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -11,13 +12,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 
 @Composable
-fun App(navController: NavHostController) {
+fun MainScreen(navController: NavHostController) {
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
     val items = listOf<String>("home_screen", "login_screen", "signup_screen")
-    Scaffold(bottomBar = {if (items.contains(currentDestination?.route))
-        BottomNavigationBar(navController = navController)
+
+    Scaffold(bottomBar = {
+        if (items.contains(currentDestination?.route))
+            BottomNavigationBar(navController = navController)
     }) {
         SetupNavGraph(navController = navController)
     }
@@ -37,8 +40,21 @@ fun BottomNavigationBar(navController: NavHostController) {
                 } == true,
                 onClick = {
                     navController.navigate(item) {
-                        popUpTo(item)
+                        popUpTo(navController.graph.findStartDestination().id){
+
+                            saveState = true
+                        }
+                        restoreState = true
+                        launchSingleTop = true
                     }
+
+                    currentDestination?.hierarchy?.forEach {
+                        Log.d(
+                            "bottomNav",
+                            it.route ?: "none"
+                        )
+                    }
+                    Log.d("bottomNav", "*********************")
                 },
                 icon = {
                     Icon(

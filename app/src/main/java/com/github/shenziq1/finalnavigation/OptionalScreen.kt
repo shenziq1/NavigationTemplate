@@ -20,11 +20,7 @@ fun OptionalScreen(navController: NavHostController) {
                 imageVector = Icons.Filled.ArrowBack,
                 contentDescription = "null",
                 Modifier.clickable {
-                    navController.navigate("HOME") {
-                        popUpTo("HOME") {
-                            inclusive = true
-                        }
-                    }
+                    navController.popBackStack()
                 }
             )
         }

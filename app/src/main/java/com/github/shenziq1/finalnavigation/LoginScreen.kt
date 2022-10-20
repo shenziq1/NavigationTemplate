@@ -39,8 +39,8 @@ fun LoginScreen(navController: NavHostController) {
 
 }
 
-@Composable
-@Preview(showBackground = true)
-fun LoginScreenPreview() {
-    LoginScreen(navController = rememberNavController())
-}
+//@Composable
+//@Preview(showBackground = true)
+//fun LoginScreenPreview() {
+//    LoginScreen(navController = rememberNavController())
+//}
