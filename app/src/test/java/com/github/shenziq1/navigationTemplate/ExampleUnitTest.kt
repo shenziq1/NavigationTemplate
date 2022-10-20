@@ -1,4 +1,4 @@
-package com.github.shenziq1.finalnavigation
+package com.github.shenziq1.navigationTemplate
 
 import org.junit.Test
 

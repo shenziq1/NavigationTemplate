@@ -1,11 +1,12 @@
-package com.github.shenziq1.finalnavigation
+package com.github.shenziq1.navigationTemplate
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.github.shenziq1.finalnavigation.ui.theme.FinalNavigationTheme
+import com.github.shenziq1.navigationTemplate.screens.MainScreen
+import com.github.shenziq1.navigationTemplate.ui.theme.FinalNavigationTheme
 
 class MainActivity : ComponentActivity() {
 

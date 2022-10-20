@@ -1,4 +1,4 @@
-package com.github.shenziq1.finalnavigation
+package com.github.shenziq1.navigationTemplate
 
 const val DETAIL_ARGUMENT_KEY = "id"
 const val DETAIL_ARGUMENT_KEY2 = "name"

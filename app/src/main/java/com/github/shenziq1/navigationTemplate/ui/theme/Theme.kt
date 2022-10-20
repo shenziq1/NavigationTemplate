@@ -1,4 +1,4 @@
-package com.github.shenziq1.finalnavigation.ui.theme
+package com.github.shenziq1.navigationTemplate.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

@@ -1,4 +1,4 @@
-package com.github.shenziq1.finalnavigation
+package com.github.shenziq1.navigationTemplate.screens
 
 import android.util.Log
 import androidx.compose.material.*
@@ -10,6 +10,7 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.github.shenziq1.navigationTemplate.SetupNavGraph
 
 @Composable
 fun MainScreen(navController: NavHostController) {

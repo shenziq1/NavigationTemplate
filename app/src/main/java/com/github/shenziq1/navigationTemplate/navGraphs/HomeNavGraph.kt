@@ -1,4 +1,4 @@
-package com.github.shenziq1.finalnavigation.navGraphs
+package com.github.shenziq1.navigationTemplate.navGraphs
 
 import android.util.Log
 import androidx.navigation.NavGraphBuilder
@@ -7,7 +7,10 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.navArgument
-import com.github.shenziq1.finalnavigation.*
+import com.github.shenziq1.navigationTemplate.*
+import com.github.shenziq1.navigationTemplate.screens.DetailScreen
+import com.github.shenziq1.navigationTemplate.screens.homeScreen.HomeScreen
+import com.github.shenziq1.navigationTemplate.screens.OptionalScreen
 
 fun NavGraphBuilder.homeNavGraph(
     navController: NavHostController
