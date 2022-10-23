@@ -1,11 +1,13 @@
 package com.github.shenziq1.navigationTemplate.screens
 
+import com.github.shenziq1.navigationTemplate.R
 import android.util.Log
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
@@ -58,10 +60,7 @@ fun BottomNavigationBar(navController: NavHostController) {
                     Log.d("bottomNav", "*********************")
                 },
                 icon = {
-                    Icon(
-                        imageVector = Icons.Filled.Home,
-                        contentDescription = "null"
-                    )
+                    Icon(painter = painterResource(id = R.drawable.diamond), contentDescription = null)
                 },
                 label = { Text(text = item) }
             )
