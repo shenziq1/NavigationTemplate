@@ -1,4 +1,4 @@
-package com.github.shenziq1.navigationTemplate
+package com.github.shenziq1.navigationTemplate.navGraphs
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController

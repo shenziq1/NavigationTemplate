@@ -3,8 +3,6 @@ package com.github.shenziq1.navigationTemplate.screens
 import com.github.shenziq1.navigationTemplate.R
 import android.util.Log
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
@@ -12,7 +10,7 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.github.shenziq1.navigationTemplate.SetupNavGraph
+import com.github.shenziq1.navigationTemplate.navGraphs.SetupNavGraph
 
 @Composable
 fun MainScreen(navController: NavHostController) {
